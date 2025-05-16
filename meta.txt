@@ -1,0 +1,94 @@
+# Signal Website - Project Metadata
+
+## Objective
+Create a modern website for Signal, a sign language interpretation system that uses a glove with sensors to detect American Sign Language (ASL) finger spelling.
+
+## Pages Required
+1. Home Page - Main landing page with YouTube video player and product overview
+2. Features Page - Detailed information about the product capabilities
+
+## Feature Requirements
+- YouTube video player on main page with customizable video link
+- Bright, cheerful UI design with moderate visual effects
+- Responsive layout for all devices
+- Information about the Signal app and its features
+- Light color scheme featuring softer blues and whites
+- Clean typography using Roboto font
+- Visual elements like circles, patterns, and highlights
+- Interactive elements with subtle animations
+- Clear visual hierarchy with blue accent colors
+- Dark mode support
+
+## Technology Stack
+- Next.js for frontend development
+- TypeScript for type safety
+- Tailwind CSS for styling
+- @tailwindcss/typography for improved text styling
+- Framer Motion for animations
+- Heroicons for UI icons
+- shadcn/ui for UI components
+
+## UI Elements Implemented
+- Softer color palette with blues and whites
+- Decorative circular elements for visual interest
+- Highlight effects on important text
+- Subtle background patterns and gradients
+- Card designs with border accents
+- Rounded shapes and soft shadows
+- Animated hover effects on interactive elements
+- Underline indicators for active navigation
+- Consistent spacing and typography
+- Visual cues like icons and decorative elements
+
+## Project Structure
+- pages/ - Next.js pages
+- public/ - Static assets
+- styles/ - CSS styles
+- components/ - Reusable React components
+  - ui/ - shadcn/ui components
+  - Layout.tsx - Main layout wrapper
+  - Navbar.tsx - Navigation bar with mobile menu
+  - Footer.tsx - Site footer
+  - YouTubePlayer.tsx - YouTube video embed component
+
+## Completed Tasks
+- [x] Initialize project structure
+- [x] Create components/ directory for React components
+- [x] Create Layout, Navbar, Footer components
+- [x] Create YouTubePlayer component with customizable video input
+- [x] Create Home page with YouTube video player
+- [x] Create Features page
+- [x] Add navigation between pages
+- [x] Implement responsive design
+- [x] Add content about Signal app
+- [x] Update styling with Tailwind CSS
+- [x] Configure Tailwind with typography plugin
+- [x] Install required dependencies (@tailwindcss/typography)
+- [x] Add animations with Framer Motion
+- [x] Implement dark mode support
+- [x] Update design to be brighter with blues and whites
+- [x] Add decorative circular elements and patterns
+- [x] Create highlight effects for important text
+- [x] Improve visual hierarchy with consistent styling
+- [x] Enhance cards with borders and visual interest
+- [x] Make buttons more prominent with size and shadows
+- [x] Add subtle background patterns and gradients
+- [x] Improve footer with social icons and visual elements
+- [x] Add underline indicators for active navigation
+- [x] Improve contrast by adjusting button brightness and text darkness
+- [x] Soften primary blue color for better visual comfort
+- [x] Create card-text CSS variable for consistent text styling
+
+## Next Steps
+- [ ] Add custom favicon and metadata
+- [ ] Add placeholder images
+- [ ] Optimize for performance
+- [ ] Add any additional pages as needed (e.g., Contact, About)
+- [ ] Implement form functionality (if needed)
+- [ ] Add more interactive elements
+- [ ] Enhance accessibility features
+
+## Running the Project
+1. Install dependencies: `npm install`
+2. Run the development server: `npm run dev`
+3. Open http://localhost:3000 in your browser 
