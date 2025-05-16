@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Footer: React.FC = () => {
   return (
@@ -28,20 +28,20 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-gray-600 hover:text-primary transition-colors flex items-center">
+                <Link href="/" className="text-gray-600 hover:text-primary transition-colors flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/features" className="text-gray-600 hover:text-primary transition-colors flex items-center">
+                <Link href="/features" className="text-gray-600 hover:text-primary transition-colors flex items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-2 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                   </svg>
                   Features
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

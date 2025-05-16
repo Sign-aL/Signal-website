@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Link from 'next/link';
 
 export default function Features() {
   const featureCards = [
@@ -232,12 +233,12 @@ export default function Features() {
           >
             <div className="absolute inset-0 -m-10 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-full transform rotate-3"></div>
             <Button className="bg-primary/80 hover:bg-primary text-slate-100 font-semibold px-8 py-6 text-lg rounded-full shadow-md relative z-10" asChild>
-              <a href="/" className="flex items-center">
+              <Link href="/" className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                 </svg>
                 Return to Home
-              </a>
+              </Link>
             </Button>
           </motion.div>
         </div>

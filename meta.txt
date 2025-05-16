@@ -6,6 +6,7 @@ Create a modern website for Signal, a sign language interpretation system that u
 ## Pages Required
 1. Home Page - Main landing page with YouTube video player and product overview
 2. Features Page - Detailed information about the product capabilities
+3. _document.tsx - Custom Document for proper font loading
 
 ## Feature Requirements
 - YouTube video player on main page with customizable video link
@@ -39,9 +40,12 @@ Create a modern website for Signal, a sign language interpretation system that u
 - Underline indicators for active navigation
 - Consistent spacing and typography
 - Visual cues like icons and decorative elements
+- White text on blue cards for better readability
+- Improved button text contrast for accessibility
 
 ## Project Structure
 - pages/ - Next.js pages
+  - _document.tsx - Custom Document for proper font loading
 - public/ - Static assets
 - styles/ - CSS styles
 - components/ - Reusable React components
@@ -78,6 +82,9 @@ Create a modern website for Signal, a sign language interpretation system that u
 - [x] Improve contrast by adjusting button brightness and text darkness
 - [x] Soften primary blue color for better visual comfort
 - [x] Create card-text CSS variable for consistent text styling
+- [x] Change description cards to have white text on blue background
+- [x] Fix ESLint warnings by replacing <a> elements with Next.js Link components
+- [x] Move font definitions to _document.tsx for proper loading
 
 ## Next Steps
 - [ ] Add custom favicon and metadata

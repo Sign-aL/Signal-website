@@ -17,9 +17,6 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Signal - Sign Langua
         <meta name="description" content="Signal is a sign language interpretation system that uses a glove with sensors to detect American Sign Language (ASL) finger spelling." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
       </Head>
       <div className="flex flex-col min-h-screen bg-white">
         <Navbar />
