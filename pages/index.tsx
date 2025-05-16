@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import Image from 'next/image';
 
 export default function Home() {
   const fadeIn = {
@@ -241,6 +242,56 @@ export default function Home() {
               </Button>
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Partners and Sponsors Section */}
+      <section className="section-colored py-16">
+        <div className="content max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.h2 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            className="text-3xl font-bold text-center mb-12"
+          >
+            Our <span className="accent-text highlight">Partners</span>
+          </motion.h2>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 items-center justify-items-center">
+            {[
+              { name: "Google Solution Challenge", src: "/images/logos/google-solution-challenge.svg", width: 120, height: 60 },
+              { name: "Hack2Skill", src: "/images/logos/hack2skill.svg", width: 120, height: 60 },
+              { name: "Google", src: "/images/logos/google.svg", width: 120, height: 60 }
+            ].map((logo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ delay: index * 0.1 }}
+                className="flex items-center justify-center grayscale hover:grayscale-0 transition-all duration-300"
+              >
+                <div className="relative h-16 w-32">
+                  <Image 
+                    src={logo.src}
+                    alt={`${logo.name} logo`}
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ delay: 0.6 }}
+            className="text-center mt-8 text-sm text-gray-600"
+          >
+            Proud participant in the Google Solution Challenge, powered by Google technologies including Gemini and Gemma.
+          </motion.p>
         </div>
       </section>
     </Layout>

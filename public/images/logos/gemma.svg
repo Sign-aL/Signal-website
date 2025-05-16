@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#f8f9fa"/>
+  <circle cx="100" cy="45" r="25" fill="#F6AE2D"/>
+  <text x="100" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="16" text-anchor="middle" fill="#4F4F4F">Gemma</text>
+</svg> 

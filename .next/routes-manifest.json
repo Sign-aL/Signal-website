@@ -26,6 +26,12 @@
       "regex": "^/features(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/features(?:/)?$"
+    },
+    {
+      "page": "/prototype",
+      "regex": "^/prototype(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/prototype(?:/)?$"
     }
   ],
   "dataRoutes": [],

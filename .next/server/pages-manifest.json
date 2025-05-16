@@ -4,6 +4,7 @@
   "/api/hello": "pages/api/hello.js",
   "/features": "pages/features.html",
   "/": "pages/index.html",
+  "/prototype": "pages/prototype.html",
   "/_error": "pages/_error.js",
   "/404": "pages/404.html"
 }

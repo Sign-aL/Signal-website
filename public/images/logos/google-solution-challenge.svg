@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#f8f9fa"/>
+  <text x="100" y="35" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#4285F4">Google</text>
+  <text x="100" y="55" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#4285F4">Solution</text>
+  <text x="100" y="75" font-family="Arial, sans-serif" font-weight="bold" font-size="14" text-anchor="middle" fill="#4285F4">Challenge</text>
+</svg> 

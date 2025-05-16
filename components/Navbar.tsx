@@ -83,6 +83,17 @@ const Navbar: React.FC = () => {
                   )}
                 </motion.span>
               </Link>
+              <Link href="/prototype" className={`px-3 py-2 text-sm font-medium text-gray-700 hover:text-primary ${isActive('/prototype')}`}>
+                <motion.span whileHover="hover" variants={linkVariants} className="relative">
+                  <span className="flex items-center">
+                    Prototype
+                    <span className="ml-1 bg-blue-100 text-primary text-xs px-1.5 py-0.5 rounded-full">New</span>
+                  </span>
+                  {router.pathname === '/prototype' && (
+                    <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary"></span>
+                  )}
+                </motion.span>
+              </Link>
             </div>
           </div>
           
@@ -134,6 +145,20 @@ const Navbar: React.FC = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Features
+            </Link>
+            <Link
+              href="/prototype"
+              className={`block px-3 py-2 rounded-md text-base font-medium ${
+                router.pathname === '/prototype' 
+                  ? 'bg-primary text-white' 
+                  : 'text-gray-700 hover:bg-blue-50'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              <div className="flex items-center">
+                Prototype
+                <span className="ml-1 bg-blue-100 text-primary text-xs px-1.5 py-0.5 rounded-full">New</span>
+              </div>
             </Link>
           </div>
         </motion.div>

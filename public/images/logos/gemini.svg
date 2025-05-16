@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <rect width="200" height="100" fill="#f8f9fa"/>
+  <circle cx="80" cy="50" r="20" fill="#8E75B2"/>
+  <circle cx="120" cy="50" r="20" fill="#8E75B2"/>
+  <text x="100" y="90" font-family="Arial, sans-serif" font-weight="bold" font-size="16" text-anchor="middle" fill="#4F4F4F">Gemini</text>
+</svg> 
